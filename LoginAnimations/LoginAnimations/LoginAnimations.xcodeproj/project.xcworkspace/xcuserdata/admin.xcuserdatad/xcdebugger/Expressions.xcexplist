@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[HumanIconAnimated initWithFrame:]:HumanIconAnimated.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HumanIconAnimated layoutSubviews]:HumanIconAnimated.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HumanIconAnimated commonInit:]:HumanIconAnimated.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "circle.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
