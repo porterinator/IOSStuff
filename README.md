@@ -1,6 +1,6 @@
-# h1 IOSStuff
+# IOSStuff
 
-## h2 LoginAnimations
+## LoginAnimations
 Что можно посмотреть на примере данного проекта
 * QuarzCore
   * Анимации CALayer, рисонвание с помощью криывых Безье
