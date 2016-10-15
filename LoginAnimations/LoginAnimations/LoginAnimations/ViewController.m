@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HumanIconAnimated.h"
+#import "UIColorHex.h"
 
 @interface ViewController ()
 
@@ -15,14 +16,6 @@
 
 @implementation ViewController
 
-
-- (UIColor *)colorFromHexString:(NSString *)hexString {
-    unsigned rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setScanLocation:1]; // bypass '#' character
-    [scanner scanHexInt:&rgbValue];
-    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +30,7 @@
     [self.etPassword setTintColor:targetColor];
     [self.etLogin becomeFirstResponder];
     
-    self.loginButton.backgroundColor = [self colorFromHexString:@"#FF3366"];
+    self.loginButton.backgroundColor = [UIColor colorFromHexString:@"#FF3366"];
     self.loginButton.layer.cornerRadius = 15.0f;
 }
 
@@ -48,7 +41,7 @@
 
 - (IBAction)loginClick:(id)sender
 {
-    [self.loginButton.titleLabel setText:@""];
+    [self.loginButton.titleLabel removeFromSuperview];
     [CATransaction begin];
     __block CGRect oldBounds = self.loginButton.layer.bounds;
     __block CGRect newBounds = oldBounds;

@@ -7,16 +7,10 @@
 //
 
 #import "LogoView.h"
+#import "UIColorHex.h"
 
 @implementation LogoView
 
-- (UIColor *)colorFromHexString:(NSString *)hexString {
-    unsigned rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setScanLocation:1]; // bypass '#' character
-    [scanner scanHexInt:&rgbValue];
-    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
-}
 
 - (void)drawRect:(CGRect)rect {
     CGFloat unit = rect.size.width / 8;
@@ -60,10 +54,10 @@
     
     
     NSArray *gradientColors = [NSArray arrayWithObjects:
-                               (id)[self colorFromHexString:@"#F5F5F5"].CGColor,
-                               (id)[self colorFromHexString:@"#F3F3F2"].CGColor,
+                               (id)[UIColor colorFromHexString:@"#F5F5F5"].CGColor,
+                               (id)[UIColor colorFromHexString:@"#F3F3F2"].CGColor,
                                //(id)[self colorFromHexString:@"#D8D8D8"].CGColor,
-                               (id)[self colorFromHexString:@"#CECDCD"].CGColor,
+                               (id)[UIColor colorFromHexString:@"#CECDCD"].CGColor,
                                nil];
     CGFloat gradientLocations[] = {0, 0.5, 1};
     CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (CFArrayRef)gradientColors, gradientLocations);

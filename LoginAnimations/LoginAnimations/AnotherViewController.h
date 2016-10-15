@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OffButton.h"
 
 @interface AnotherViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgAvatar;
+@property (weak, nonatomic) IBOutlet OffButton *offButton;
+- (IBAction)offButtonClick:(id)sender;
 @end
