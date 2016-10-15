@@ -54,7 +54,6 @@
     box.strokeColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6f].CGColor;
     box.lineWidth = 1;
     
-    // Add to parent layer
     [self.layer addSublayer:box];
     
     [super drawRect:rect];

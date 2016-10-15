@@ -8,6 +8,7 @@
 
 #import "AnotherViewController.h"
 #import "UIColorHex.h"
+#import "AnimationHelper.h"
 
 @interface AnotherViewController ()
 
@@ -26,16 +27,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)offButtonClick:(id)sender {
     [UIView animateWithDuration:0.5
@@ -58,28 +49,10 @@
          newBounds.size = self.view.frame.size;
          newBounds.size.width = newBounds.size.width * 3;
          newBounds.size.height = newBounds.size.height * 3;
-         CABasicAnimation *biggerAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
-         biggerAnimation.duration            = .5; // "animate over 10 seconds or so.."
-         biggerAnimation.repeatCount         = 1.0;  // Animate only once..
-         biggerAnimation.beginTime = [self.offButton.layer convertTime:CACurrentMediaTime() toLayer:nil] + 0.3;
-         
-         // Animate from no part of the stroke being drawn to the entire stroke being drawn
-         biggerAnimation.fromValue = [NSValue valueWithCGRect:oldBounds];
-         biggerAnimation.toValue   = [NSValue valueWithCGRect:newBounds];
-         
-         // Experiment with timing to get the appearence to look the way you want
-         biggerAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-         //
-         // Add the animation to the circle
+         CABasicAnimation *biggerAnimation = [AnimationHelper getBiggerAnimation:self.offButton.layer oldBounds:oldBounds newBounds:newBounds];
          
          
-         CABasicAnimation *cornerRadiusAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
-         cornerRadiusAnimation.duration = .5;
-         cornerRadiusAnimation.repeatCount = 1;
-         cornerRadiusAnimation.beginTime = [self.offButton.layer convertTime:CACurrentMediaTime() toLayer:nil] + 0.3;
-         cornerRadiusAnimation.fromValue = [NSNumber numberWithFloat: 15.0f];
-         cornerRadiusAnimation.toValue = [NSNumber numberWithFloat:newBounds.size.width / 2];
-         cornerRadiusAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+         CABasicAnimation *cornerRadiusAnimation = [AnimationHelper getCornerRadiusAnimation:self.offButton.layer newBounds:newBounds];
          
          CABasicAnimation *toCenterAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
          toCenterAnimation.duration = .5;
@@ -93,7 +66,6 @@
          toCenterAnimation.toValue = [NSValue valueWithCGRect:newPosition];
          toCenterAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
          
-
          
          [CATransaction setCompletionBlock:^{
              self.offButton.layer.bounds = newBounds;

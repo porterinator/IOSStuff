@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HumanIconAnimated.h"
 #import "UIColorHex.h"
+#import "AnimationHelper.h"
 
 @interface ViewController ()
 
@@ -19,16 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIColor *targetColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6f];
     self.etLogin.backgroundColor = [UIColor clearColor];
     self.etLogin.layer.borderColor = [UIColor clearColor].CGColor;
-    UIColor *targetColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6f];
     self.etLogin.textColor = targetColor;
     [self.etLogin setTintColor:targetColor];
+    [self.etLogin becomeFirstResponder];
+    
     self.etPassword.backgroundColor = [UIColor clearColor];
     self.etPassword.layer.borderColor = [UIColor clearColor].CGColor;
     self.etPassword.textColor = targetColor;
     [self.etPassword setTintColor:targetColor];
-    [self.etLogin becomeFirstResponder];
     
     self.loginButton.backgroundColor = [UIColor colorFromHexString:@"#FF3366"];
     self.loginButton.layer.cornerRadius = 15.0f;
@@ -47,17 +49,14 @@
     __block CGRect newBounds = oldBounds;
     newBounds.size.width = 30.0f;
     CABasicAnimation *toCircleAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
-    toCircleAnimation.duration            = .1; // "animate over 10 seconds or so.."
-    toCircleAnimation.repeatCount         = 1.0;  // Animate only once..
+    toCircleAnimation.duration            = .1;
+    toCircleAnimation.repeatCount         = 1.0;
     
-    // Animate from no part of the stroke being drawn to the entire stroke being drawn
     toCircleAnimation.fromValue = [NSValue valueWithCGRect:oldBounds];
     toCircleAnimation.toValue   = [NSValue valueWithCGRect:newBounds];
     
-    // Experiment with timing to get the appearence to look the way you want
     toCircleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     self.loginButton.layer.bounds = newBounds;
-    // Add the animation to the circle
     
     [CATransaction setCompletionBlock:^{
         //make bigger
@@ -67,29 +66,10 @@
         newBounds.size = self.view.frame.size;
         newBounds.size.width = newBounds.size.width * 3;
         newBounds.size.height = newBounds.size.height * 3;
-        CABasicAnimation *biggerAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
-        biggerAnimation.duration            = .5; // "animate over 10 seconds or so.."
-        biggerAnimation.repeatCount         = 1.0;  // Animate only once..
-        biggerAnimation.beginTime = [self.loginButton.layer convertTime:CACurrentMediaTime() toLayer:nil] + 0.3;
-        
-        // Animate from no part of the stroke being drawn to the entire stroke being drawn
-        biggerAnimation.fromValue = [NSValue valueWithCGRect:oldBounds];
-        biggerAnimation.toValue   = [NSValue valueWithCGRect:newBounds];
-        
-        // Experiment with timing to get the appearence to look the way you want
-        biggerAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-        //
-        // Add the animation to the circle
+        CABasicAnimation *biggerAnimation = [AnimationHelper getBiggerAnimation: self.loginButton.layer oldBounds:oldBounds newBounds:newBounds];
         
         
-        CABasicAnimation *cornerRadiusAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
-        cornerRadiusAnimation.duration = .5;
-        cornerRadiusAnimation.repeatCount = 1;
-        cornerRadiusAnimation.beginTime = [self.loginButton.layer convertTime:CACurrentMediaTime() toLayer:nil] + 0.3;
-        cornerRadiusAnimation.fromValue = [NSNumber numberWithFloat: 15.0f];
-        cornerRadiusAnimation.toValue = [NSNumber numberWithFloat:newBounds.size.width / 2];
-        cornerRadiusAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-        
+        CABasicAnimation *cornerRadiusAnimation = [AnimationHelper getCornerRadiusAnimation:self.loginButton.layer newBounds:newBounds];
         
         [CATransaction setCompletionBlock:^{
             self.loginButton.layer.bounds = newBounds;

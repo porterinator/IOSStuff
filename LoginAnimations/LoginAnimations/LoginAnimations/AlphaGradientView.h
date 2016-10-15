@@ -2,7 +2,7 @@
 //  GradientView.h
 //  AssetGrid
 //
-//  Created by Joe Andolina on 10/18/12.
+//  Created by Admin on 11/10/16.
 //
 //
 #import <UIKit/UIKit.h>

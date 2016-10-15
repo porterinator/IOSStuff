@@ -26,8 +26,6 @@
     box1.fillColor = [UIColor whiteColor].CGColor;
     box1.strokeColor = [UIColor whiteColor].CGColor;
     box1.lineWidth = 1;
-    
-    // Add to parent layer
     [self.layer addSublayer:box1];
     
     
@@ -46,8 +44,6 @@
     box2.strokeColor = [UIColor blackColor].CGColor;
     box2.lineWidth = 1;
     
-    // Add to parent layer
-    //[self.layer addSublayer:box2];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
@@ -56,7 +52,6 @@
     NSArray *gradientColors = [NSArray arrayWithObjects:
                                (id)[UIColor colorFromHexString:@"#F5F5F5"].CGColor,
                                (id)[UIColor colorFromHexString:@"#F3F3F2"].CGColor,
-                               //(id)[self colorFromHexString:@"#D8D8D8"].CGColor,
                                (id)[UIColor colorFromHexString:@"#CECDCD"].CGColor,
                                nil];
     CGFloat gradientLocations[] = {0, 0.5, 1};

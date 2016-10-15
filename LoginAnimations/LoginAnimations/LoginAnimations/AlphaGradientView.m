@@ -2,7 +2,7 @@
 //  GradientView.m
 //  AssetGrid
 //
-//  Created by Joe Andolina on 10/18/12.
+//  Created by Admin on 11/10/16.
 //
 //
 #import <QuartzCore/QuartzCore.h>
@@ -90,10 +90,10 @@
         0.9f, 0.75f, 0.75f, 0.75f
     };
     
-    // Set up the start and end points for the gradient
+    // Задаем начальные и конечные точки градиента
     [self calculateStartAndEndPoints];
     
-    // Create an image of a solid slab in the desired color
+    // Создаем белую заглушку
     CGRect frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 1.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -101,7 +101,7 @@
     CGContextFillRect( UIGraphicsGetCurrentContext(), frame);
     CGImageRef colorRef = UIGraphicsGetImageFromCurrentImageContext().CGImage;
     
-    // Create an image of a gradient from black to white
+    // Созадем градиент от черного к белому
     CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB();
     CGGradientRef gradientRef = CGGradientCreateWithColorComponents(rgb, maskColors, NULL, sizeof(maskColors) / (sizeof(maskColors[0]) * 4));
     CGColorSpaceRelease(rgb);
@@ -109,7 +109,7 @@
     CGImageRef maskRef = UIGraphicsGetImageFromCurrentImageContext().CGImage;
     UIGraphicsEndImageContext();
     
-    // Blend the solid image and the gradient to produce the final gradient.
+    //Накладываем маску
     CGImageRef tmpMask = CGImageMaskCreate(
                                            CGImageGetWidth(maskRef),
                                            CGImageGetHeight(maskRef),
@@ -120,7 +120,7 @@
                                            NULL,
                                            false);
     
-    // Draw the resulting mask.
+    // Рисуем результат наложения
     context = UIGraphicsGetCurrentContext();
     CGContextDrawImage(context, rect, CGImageCreateWithMask(colorRef, tmpMask));
     UIGraphicsEndImageContext();

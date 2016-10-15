@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		840B05801DB20DB900E7F2BF /* OffButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B057F1DB20DB900E7F2BF /* OffButton.m */; };
 		840B05831DB210AA00E7F2BF /* UIColorHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B05821DB210AA00E7F2BF /* UIColorHex.m */; };
+		840B05861DB2826600E7F2BF /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B05851DB2826600E7F2BF /* AnimationHelper.m */; };
 		8485EC881DAE9E6400A9778B /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485EC871DAE9E6400A9778B /* LogoView.m */; };
 		8485EC8A1DAFBD3000A9778B /* AnotherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485EC891DAFBD3000A9778B /* AnotherStoryboard.storyboard */; };
 		8485EC8D1DAFBE6200A9778B /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485EC8C1DAFBE6200A9778B /* AnotherViewController.m */; };
@@ -28,6 +29,8 @@
 		840B057F1DB20DB900E7F2BF /* OffButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffButton.m; sourceTree = "<group>"; };
 		840B05811DB210AA00E7F2BF /* UIColorHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorHex.h; sourceTree = "<group>"; };
 		840B05821DB210AA00E7F2BF /* UIColorHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorHex.m; sourceTree = "<group>"; };
+		840B05841DB2826600E7F2BF /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationHelper.h; path = ../AnimationHelper.h; sourceTree = "<group>"; };
+		840B05851DB2826600E7F2BF /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationHelper.m; path = ../AnimationHelper.m; sourceTree = "<group>"; };
 		8485EC861DAE9E6400A9778B /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
 		8485EC871DAE9E6400A9778B /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
 		8485EC891DAFBD3000A9778B /* AnotherStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AnotherStoryboard.storyboard; path = ../AnotherStoryboard.storyboard; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				84DF560F1DACF89B003B9E2C /* Info.plist */,
 				840B05811DB210AA00E7F2BF /* UIColorHex.h */,
 				840B05821DB210AA00E7F2BF /* UIColorHex.m */,
+				840B05841DB2826600E7F2BF /* AnimationHelper.h */,
+				840B05851DB2826600E7F2BF /* AnimationHelper.m */,
 				84DF55FE1DACF89B003B9E2C /* Supporting Files */,
 			);
 			path = LoginAnimations;
@@ -202,6 +207,7 @@
 				840B05831DB210AA00E7F2BF /* UIColorHex.m in Sources */,
 				8485EC8D1DAFBE6200A9778B /* AnotherViewController.m in Sources */,
 				84DF56031DACF89B003B9E2C /* AppDelegate.m in Sources */,
+				840B05861DB2826600E7F2BF /* AnimationHelper.m in Sources */,
 				84DF561E1DAE7817003B9E2C /* AlphaGradientView.m in Sources */,
 				84DF56001DACF89B003B9E2C /* main.m in Sources */,
 				8485EC881DAE9E6400A9778B /* LogoView.m in Sources */,

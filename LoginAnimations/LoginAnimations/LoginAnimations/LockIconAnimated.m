@@ -7,16 +7,10 @@
 //
 
 #import "LockIconAnimated.h"
+#import "AnimationHelper.h"
 
 @implementation LockIconAnimated
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 - (void)commonInit: (CGRect) frame
 {
@@ -26,23 +20,9 @@
     box.fillColor = [UIColor clearColor].CGColor;
     box.strokeColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6f].CGColor;
     box.lineWidth = 1;
-    
-    // Add to parent layer
     [self.layer addSublayer:box];
     
-    // Configure animation
-    CABasicAnimation *drawAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    drawAnimation.duration            = 2.0; // "animate over 10 seconds or so.."
-    drawAnimation.repeatCount         = 1.0;  // Animate only once..
-    
-    // Animate from no part of the stroke being drawn to the entire stroke being drawn
-    drawAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-    drawAnimation.toValue   = [NSNumber numberWithFloat:1.0f];
-    
-    // Experiment with timing to get the appearence to look the way you want
-    drawAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    
-    // Add the animation to the circle
+    CABasicAnimation *drawAnimation = [AnimationHelper getStrokeAnimation];
     [box addAnimation:drawAnimation forKey:@"drawAnimation"];
     
     CAShapeLayer *arc = [CAShapeLayer layer];
