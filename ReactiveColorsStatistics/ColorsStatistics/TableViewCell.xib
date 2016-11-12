@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="197" id="wLy-qE-t47" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="633" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLy-qE-t47" id="dZf-s0-g4t">
+                <rect key="frame" x="0.0" y="0.0" width="633" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Fantastictales" translatesAutoresizingMaskIntoConstraints="NO" id="m01-3z-EHq">
+                        <rect key="frame" x="48" y="58" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="QzH-tE-lrT"/>
+                            <constraint firstAttribute="width" constant="40" id="ydc-kY-y36"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLz-uq-7Nd" userLabel="Niche Stat">
+                        <rect key="frame" x="111" y="119" width="42" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRh-cO-nYS">
+                        <rect key="frame" x="183" y="175" width="150" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Rbf-qT-q8X"/>
+                        </constraints>
+                        <color key="trackTintColor" red="0.16078431369999999" green="0.19215686269999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Niche" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCb-vo-1ly">
+                        <rect key="frame" x="111" y="21" width="470" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.2196078431372549" green="0.24705882352941178" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="KLz-uq-7Nd" secondAttribute="trailing" constant="44" id="8Nt-DN-QYw"/>
+                    <constraint firstItem="TRh-cO-nYS" firstAttribute="leading" secondItem="m01-3z-EHq" secondAttribute="trailing" constant="23" id="DNS-2T-yZD"/>
+                    <constraint firstItem="KLz-uq-7Nd" firstAttribute="leading" secondItem="m01-3z-EHq" secondAttribute="trailing" constant="23" id="Hgv-qp-ocH"/>
+                    <constraint firstItem="KLz-uq-7Nd" firstAttribute="top" secondItem="rCb-vo-1ly" secondAttribute="bottom" constant="6" id="KJS-WZ-awz"/>
+                    <constraint firstItem="rCb-vo-1ly" firstAttribute="leading" secondItem="m01-3z-EHq" secondAttribute="trailing" constant="23" id="O68-tL-vGJ"/>
+                    <constraint firstItem="m01-3z-EHq" firstAttribute="centerY" secondItem="dZf-s0-g4t" secondAttribute="centerY" id="csl-fs-I1T"/>
+                    <constraint firstItem="rCb-vo-1ly" firstAttribute="top" secondItem="dZf-s0-g4t" secondAttribute="topMargin" constant="12" id="dBN-1s-k8i"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TRh-cO-nYS" secondAttribute="trailing" constant="44" id="eYs-hl-6QH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TRh-cO-nYS" secondAttribute="bottom" constant="12" id="ld5-3A-UXB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rCb-vo-1ly" secondAttribute="trailing" constant="44" id="pyc-w8-vTc"/>
+                    <constraint firstItem="m01-3z-EHq" firstAttribute="leading" secondItem="dZf-s0-g4t" secondAttribute="leadingMargin" constant="40" id="qpw-uH-azR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KLz-uq-7Nd" secondAttribute="bottom" constant="28" id="tJS-bh-uhN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nicheImage" destination="m01-3z-EHq" id="4Ue-ug-6cY"/>
+                <outlet property="nicheName" destination="rCb-vo-1ly" id="NEg-QS-iTi"/>
+                <outlet property="nicheStat" destination="TRh-cO-nYS" id="IiH-fl-T2F"/>
+                <outlet property="statsLabel" destination="KLz-uq-7Nd" id="0TG-k8-78l"/>
+            </connections>
+            <point key="canvasLocation" x="408.5" y="-188.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Fantastictales" width="40" height="43"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TableViewController tableView:numberOfRowsInSection:]:TableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[_model count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NicheDB insertNiche:]:NicheDB.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self objectForKeyPath:kNicheId inDictionary:niche];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__24-[NicheModel getNiches:]_block_invoke:NicheModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DataClient getNiches:failure:]:DataClient.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TableViewController tableView:cellForRowAtIndexPath:]:TableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.nicheStat.progress">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TableViewController tableView:willDisplayCell:forRowAtIndexPath:]:TableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[NicheDB default]:NicheDB.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self dbFilePath]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[DataClient getNiches:failure:]_block_invoke:DataClient.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TableViewCell updateFromData:]:TableViewCell.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
