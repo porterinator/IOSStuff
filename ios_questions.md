@@ -1,5 +1,5 @@
 | Вопрос        | Ответ           | Question in english  | Answer in english  |
-| ------------- |-------------| -------------|-------------|
+| ---- |-------------| ----|-------------|
 | что такое void *?| Это значает указатель на какой либо случайную область памяти  | what is void*?| void * means "a reference to some random chunk o' memory with untyped/unknown contents"|
 |а что означает просто void? | Означает возвращаемое значение функции. Метод не возвращает ничего, результат не может быть ничему присвоен | and what does simply void mean?| The (void) indicates the return type. This method doesn't return anything, so its result can't be assigned to anything.|
 |в чем разница между void * и id?|id означает ссылку на случайный объект objective-c неизвестного класса| what's the difference between void* and id |id means "a reference to some random Objective-C object of unknown class"|
