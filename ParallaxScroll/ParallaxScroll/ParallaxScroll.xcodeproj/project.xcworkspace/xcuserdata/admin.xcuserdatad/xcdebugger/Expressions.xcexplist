@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CityView drawRect:]:CityView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rect.origin.y + (rect.size.height - size.height)/2.0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

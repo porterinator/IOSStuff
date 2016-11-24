@@ -93,7 +93,7 @@
     // Задаем начальные и конечные точки градиента
     [self calculateStartAndEndPoints];
     
-    // Создаем белую заглушку
+    // Создаем черную заглушку
     CGRect frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 1.0);
     CGContextRef context = UIGraphicsGetCurrentContext();
