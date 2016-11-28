@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84E9F47A1DEB40370038897E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4791DEB40370038897E /* main.m */; };
+		84E9F47D1DEB40370038897E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F47C1DEB40370038897E /* AppDelegate.m */; };
+		84E9F4801DEB40370038897E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F47F1DEB40370038897E /* ViewController.m */; };
+		84E9F4831DEB40370038897E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4811DEB40370038897E /* Main.storyboard */; };
+		84E9F4851DEB40370038897E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4841DEB40370038897E /* Assets.xcassets */; };
+		84E9F4881DEB40370038897E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4861DEB40370038897E /* LaunchScreen.storyboard */; };
+		84E9F4911DEB40710038897E /* WaveScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4901DEB40710038897E /* WaveScrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84E9F4751DEB40370038897E /* WaveScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9F4791DEB40370038897E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84E9F47B1DEB40370038897E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84E9F47C1DEB40370038897E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84E9F47E1DEB40370038897E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84E9F47F1DEB40370038897E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84E9F4821DEB40370038897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E9F4841DEB40370038897E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E9F4871DEB40370038897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E9F4891DEB40370038897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E9F48F1DEB40710038897E /* WaveScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveScrollView.h; sourceTree = "<group>"; };
+		84E9F4901DEB40710038897E /* WaveScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveScrollView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E9F4721DEB40370038897E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84E9F46C1DEB40370038897E = {
+			isa = PBXGroup;
+			children = (
+				84E9F4771DEB40370038897E /* WaveScroll */,
+				84E9F4761DEB40370038897E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84E9F4761DEB40370038897E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4751DEB40370038897E /* WaveScroll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E9F4771DEB40370038897E /* WaveScroll */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F47B1DEB40370038897E /* AppDelegate.h */,
+				84E9F47C1DEB40370038897E /* AppDelegate.m */,
+				84E9F47E1DEB40370038897E /* ViewController.h */,
+				84E9F47F1DEB40370038897E /* ViewController.m */,
+				84E9F4811DEB40370038897E /* Main.storyboard */,
+				84E9F4841DEB40370038897E /* Assets.xcassets */,
+				84E9F4861DEB40370038897E /* LaunchScreen.storyboard */,
+				84E9F4891DEB40370038897E /* Info.plist */,
+				84E9F4781DEB40370038897E /* Supporting Files */,
+				84E9F48F1DEB40710038897E /* WaveScrollView.h */,
+				84E9F4901DEB40710038897E /* WaveScrollView.m */,
+			);
+			path = WaveScroll;
+			sourceTree = "<group>";
+		};
+		84E9F4781DEB40370038897E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4791DEB40370038897E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E9F4741DEB40370038897E /* WaveScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E9F48C1DEB40370038897E /* Build configuration list for PBXNativeTarget "WaveScroll" */;
+			buildPhases = (
+				84E9F4711DEB40370038897E /* Sources */,
+				84E9F4721DEB40370038897E /* Frameworks */,
+				84E9F4731DEB40370038897E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveScroll;
+			productName = WaveScroll;
+			productReference = 84E9F4751DEB40370038897E /* WaveScroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E9F46D1DEB40370038897E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84E9F4741DEB40370038897E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78CXM57KJ4;
+					};
+				};
+			};
+			buildConfigurationList = 84E9F4701DEB40370038897E /* Build configuration list for PBXProject "WaveScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E9F46C1DEB40370038897E;
+			productRefGroup = 84E9F4761DEB40370038897E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E9F4741DEB40370038897E /* WaveScroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E9F4731DEB40370038897E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F4881DEB40370038897E /* LaunchScreen.storyboard in Resources */,
+				84E9F4851DEB40370038897E /* Assets.xcassets in Resources */,
+				84E9F4831DEB40370038897E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E9F4711DEB40370038897E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F4911DEB40710038897E /* WaveScrollView.m in Sources */,
+				84E9F4801DEB40370038897E /* ViewController.m in Sources */,
+				84E9F47D1DEB40370038897E /* AppDelegate.m in Sources */,
+				84E9F47A1DEB40370038897E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84E9F4811DEB40370038897E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E9F4821DEB40370038897E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E9F4861DEB40370038897E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E9F4871DEB40370038897E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E9F48A1DEB40370038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		84E9F48B1DEB40370038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E9F48D1DEB40370038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaveScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org1.WaveScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84E9F48E1DEB40370038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WaveScroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org1.WaveScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E9F4701DEB40370038897E /* Build configuration list for PBXProject "WaveScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F48A1DEB40370038897E /* Debug */,
+				84E9F48B1DEB40370038897E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E9F48C1DEB40370038897E /* Build configuration list for PBXNativeTarget "WaveScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F48D1DEB40370038897E /* Debug */,
+				84E9F48E1DEB40370038897E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E9F46D1DEB40370038897E /* Project object */;
+}
