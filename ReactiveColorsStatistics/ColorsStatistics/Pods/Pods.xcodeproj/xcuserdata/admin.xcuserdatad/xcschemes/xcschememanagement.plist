@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OHHTTPStubs.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ColorsStatistics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ColorsStatisticsTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>264034E9213CCD518242132B22B49BB0</key>
+		<key>06A23325201207EEE8C22E3551E28E4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE669012579D1A58DD6922F1A7AEEA79</key>
+		<key>4DB2E7E21EC9243C3DE6505001234B89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>791D1BD44B0746C4BDDAD1D83AB714CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5178D6E0858966F45CADE8D9B4A591D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__48-[ColorsStatisticsTests testDataClientGetNiches]_block_invoke:ColorsStatisticsTests.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "request.URL.host">
+            </PersistentString>
+            <PersistentString
+               value = "[request.URL.host isEqualToString:@&quot;www.mocky.io&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

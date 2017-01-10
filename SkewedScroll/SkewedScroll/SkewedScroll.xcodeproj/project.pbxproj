@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C3CA761E23BACE00724BFB /* UIView+Polygone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3CA751E23BACE00724BFB /* UIView+Polygone.m */; };
 		84E9F4A01DEC950B0038897E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F49F1DEC950B0038897E /* main.m */; };
 		84E9F4A31DEC950B0038897E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4A21DEC950B0038897E /* AppDelegate.m */; };
 		84E9F4A61DEC950B0038897E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4A51DEC950B0038897E /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84C3CA741E23BACE00724BFB /* UIView+Polygone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Polygone.h"; sourceTree = "<group>"; };
+		84C3CA751E23BACE00724BFB /* UIView+Polygone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Polygone.m"; sourceTree = "<group>"; };
 		84E9F49B1DEC950B0038897E /* SkewedScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkewedScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E9F49F1DEC950B0038897E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84E9F4A11DEC950B0038897E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				84E9F49E1DEC950B0038897E /* Supporting Files */,
 				84E9F4B51DEC9B5C0038897E /* PolygonImage.h */,
 				84E9F4B61DEC9B5C0038897E /* PolygonImage.m */,
+				84C3CA741E23BACE00724BFB /* UIView+Polygone.h */,
+				84C3CA751E23BACE00724BFB /* UIView+Polygone.m */,
 			);
 			path = SkewedScroll;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C3CA761E23BACE00724BFB /* UIView+Polygone.m in Sources */,
 				84E9F4B71DEC9B5C0038897E /* PolygonImage.m in Sources */,
 				84E9F4A61DEC950B0038897E /* ViewController.m in Sources */,
 				84E9F4A31DEC950B0038897E /* AppDelegate.m in Sources */,
@@ -309,6 +315,7 @@
 				84E9F4B41DEC950B0038897E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-Kq-gWs">
+                                <rect key="frame" x="203" y="323" width="46" height="30"/>
+                                <state key="normal" title="SignIn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-6o-dAe">
+                                <rect key="frame" x="324" y="323" width="73" height="30"/>
+                                <state key="normal" title="Register"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1bh-sh-iQt" userLabel="login">
+                                <rect key="frame" x="203" y="238" width="194" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="Qxz-0Q-oZH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZH-BZ-gxV" userLabel="password">
+                                <rect key="frame" x="203" y="285" width="194" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="cxR-V6-7Ce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jitensha bike rental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glC-5F-oig" userLabel="Jitencha">
+                                <rect key="frame" x="218" y="188" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sZH-BZ-gxV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lwd-O6-dOf"/>
+                            <constraint firstItem="sZH-BZ-gxV" firstAttribute="width" secondItem="1bh-sh-iQt" secondAttribute="width" id="Ndp-5U-oAp"/>
+                            <constraint firstItem="1bh-sh-iQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXT-Ld-5ob"/>
+                            <constraint firstItem="glC-5F-oig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWQ-k8-nSv"/>
+                            <constraint firstItem="3jd-Kq-gWs" firstAttribute="leading" secondItem="sZH-BZ-gxV" secondAttribute="leading" id="bur-D0-NYm"/>
+                            <constraint firstItem="ZUA-6o-dAe" firstAttribute="top" secondItem="sZH-BZ-gxV" secondAttribute="bottom" constant="8" id="k98-Hr-l8t"/>
+                            <constraint firstItem="sZH-BZ-gxV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kTq-EV-M1p"/>
+                            <constraint firstItem="ZUA-6o-dAe" firstAttribute="trailing" secondItem="sZH-BZ-gxV" secondAttribute="trailing" id="pbv-mL-mTb"/>
+                            <constraint firstItem="1bh-sh-iQt" firstAttribute="bottom" secondItem="sZH-BZ-gxV" secondAttribute="top" constant="-8" id="sqN-mW-cUf"/>
+                            <constraint firstItem="3jd-Kq-gWs" firstAttribute="top" secondItem="sZH-BZ-gxV" secondAttribute="bottom" constant="8" id="vdT-kF-VgB"/>
+                            <constraint firstItem="1bh-sh-iQt" firstAttribute="top" secondItem="glC-5F-oig" secondAttribute="bottom" constant="8" id="waZ-00-8SB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btRegister" destination="ZUA-6o-dAe" id="rxK-bD-XKy"/>
+                        <outlet property="btSignIn" destination="3jd-Kq-gWs" id="8C5-VT-6ZW"/>
+                        <outlet property="header" destination="glC-5F-oig" id="Xrp-JW-FDz"/>
+                        <outlet property="tfLogin" destination="1bh-sh-iQt" id="Oda-ME-6ve"/>
+                        <outlet property="tfPassword" destination="sZH-BZ-gxV" id="tk0-Rq-fH1"/>
+                        <segue destination="JGr-8T-f7c" kind="show" identifier="showPlaces" id="jN6-Hj-gkG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="570"/>
+        </scene>
+        <!--Places View Controller-->
+        <scene sceneID="8eW-sg-QxK">
+            <objects>
+                <viewController storyboardIdentifier="PlacesViewController" id="JGr-8T-f7c" customClass="PlacesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uqg-dF-CWc"/>
+                        <viewControllerLayoutGuide type="bottom" id="8jW-Uz-jGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MIX-49-wlt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRk-Qv-e0a" customClass="GMSMapView">
+                                <rect key="frame" x="120" y="141" width="300" height="293"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fRk-Qv-e0a" secondAttribute="trailing" id="1NV-Ah-CAc"/>
+                            <constraint firstItem="fRk-Qv-e0a" firstAttribute="top" secondItem="uqg-dF-CWc" secondAttribute="bottom" id="6Hj-0M-9xB"/>
+                            <constraint firstItem="fRk-Qv-e0a" firstAttribute="leading" secondItem="MIX-49-wlt" secondAttribute="leading" id="kAY-pO-CFJ"/>
+                            <constraint firstItem="8jW-Uz-jGa" firstAttribute="top" secondItem="fRk-Qv-e0a" secondAttribute="bottom" id="yOI-zk-Q6D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fRk-Qv-e0a" id="btm-6g-VJE"/>
+                        <segue destination="Cwd-8r-w81" kind="presentation" identifier="rentBicycle" id="M6U-4M-Eii"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X33-0d-DmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="570"/>
+        </scene>
+        <!--Rent Controller-->
+        <scene sceneID="kIi-pl-Ewu">
+            <objects>
+                <viewController id="Cwd-8r-w81" customClass="RentController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JcV-yu-sWQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kZE-SA-RfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Q4-CZ-1RC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV CVC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xvc-zL-7hg">
+                                <rect key="frame" x="352" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5GQ-d4-xGY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month / Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1d-TA-fjh">
+                                <rect key="frame" x="220" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Gie-DJ-6Ak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME SURNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBy-qb-QT3">
+                                <rect key="frame" x="220" y="323" width="229" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-63-D2q">
+                                <rect key="frame" x="311" y="369" width="46" height="30"/>
+                                <state key="normal" title="Rent"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CARD NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hse-1M-Ut6">
+                                <rect key="frame" x="220" y="238" width="229" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP9-zK-d2d">
+                                <rect key="frame" x="311" y="400" width="63" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="Cwd-8r-w81" eventType="touchUpInside" id="4nE-um-eEd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a8W-63-D2q" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" id="04d-cj-SL9"/>
+                            <constraint firstItem="LBy-qb-QT3" firstAttribute="leading" secondItem="U1d-TA-fjh" secondAttribute="leading" id="1Nk-Us-olg"/>
+                            <constraint firstItem="Xvc-zL-7hg" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" constant="60" id="4D6-fk-aql"/>
+                            <constraint firstItem="Hse-1M-Ut6" firstAttribute="leading" secondItem="U1d-TA-fjh" secondAttribute="leading" id="7dr-hO-Qdo"/>
+                            <constraint firstItem="Xvc-zL-7hg" firstAttribute="top" secondItem="Hse-1M-Ut6" secondAttribute="bottom" constant="17" id="D5b-zw-TBI"/>
+                            <constraint firstItem="LP9-zK-d2d" firstAttribute="top" secondItem="a8W-63-D2q" secondAttribute="bottom" constant="17" id="KDI-Gv-rPT"/>
+                            <constraint firstItem="LBy-qb-QT3" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" id="LFh-g5-L5p"/>
+                            <constraint firstItem="Xvc-zL-7hg" firstAttribute="centerY" secondItem="0Q4-CZ-1RC" secondAttribute="centerY" id="Qvc-fh-8my"/>
+                            <constraint firstItem="U1d-TA-fjh" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" constant="-60" id="dBf-V8-Iky"/>
+                            <constraint firstItem="LP9-zK-d2d" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" id="eIA-EH-zwy"/>
+                            <constraint firstItem="Hse-1M-Ut6" firstAttribute="centerX" secondItem="0Q4-CZ-1RC" secondAttribute="centerX" id="fMW-kW-BKx"/>
+                            <constraint firstItem="U1d-TA-fjh" firstAttribute="centerY" secondItem="0Q4-CZ-1RC" secondAttribute="centerY" id="ga6-yg-HQN"/>
+                            <constraint firstItem="a8W-63-D2q" firstAttribute="top" secondItem="LBy-qb-QT3" secondAttribute="bottom" constant="17" id="hRM-jj-uPV"/>
+                            <constraint firstItem="Hse-1M-Ut6" firstAttribute="trailing" secondItem="Xvc-zL-7hg" secondAttribute="trailing" id="jfC-Yx-b7n"/>
+                            <constraint firstItem="LBy-qb-QT3" firstAttribute="trailing" secondItem="Xvc-zL-7hg" secondAttribute="trailing" id="l7i-Ct-ewx"/>
+                            <constraint firstItem="LBy-qb-QT3" firstAttribute="top" secondItem="U1d-TA-fjh" secondAttribute="bottom" constant="17" id="s4h-FH-Q9m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btCancel" destination="LP9-zK-d2d" id="qpu-hd-1F7"/>
+                        <outlet property="btRent" destination="a8W-63-D2q" id="eu2-J2-Kb6"/>
+                        <outlet property="cardNumber" destination="Hse-1M-Ut6" id="ZKg-qe-2em"/>
+                        <outlet property="code" destination="Xvc-zL-7hg" id="fEP-fn-TVR"/>
+                        <outlet property="expired" destination="U1d-TA-fjh" id="MEN-yT-RsN"/>
+                        <outlet property="name" destination="LBy-qb-QT3" id="O5h-6t-kEF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRa-RA-PFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="568"/>
+        </scene>
+    </scenes>
+</document>

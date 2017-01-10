@@ -1,4 +1,17 @@
 PODS:
+  - OHHTTPStubs (5.2.2):
+    - OHHTTPStubs/Default (= 5.2.2)
+  - OHHTTPStubs/Core (5.2.2)
+  - OHHTTPStubs/Default (5.2.2):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.2)
   - ReactiveCocoa (2.1.8):
     - ReactiveCocoa/Core (= 2.1.8)
     - ReactiveCocoa/no-arc (= 2.1.8)
@@ -7,11 +20,13 @@ PODS:
   - ReactiveCocoa/no-arc (2.1.8)
 
 DEPENDENCIES:
+  - OHHTTPStubs
   - ReactiveCocoa (= 2.1.8)
 
 SPEC CHECKSUMS:
+  OHHTTPStubs: 34d9d0994e64fcf8552dbfade5ce82ada913ee31
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
 
-PODFILE CHECKSUM: aec375be185ed4c114eb964919ff8d22c66b970d
+PODFILE CHECKSUM: 3b7abfdc619e036d45410f55f40dbcd87be36d7e
 
 COCOAPODS: 1.1.1

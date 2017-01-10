@@ -1,4 +1,16 @@
 platform :ios, ‘8.0’
+use_frameworks!
 
-target ‘ColorsStatistics’
-pod 'ReactiveCocoa', '2.1.8'
+def testing_pods
+    pod 'ReactiveCocoa', '2.1.8'
+    pod 'OHHTTPStubs'
+end
+
+target ‘ColorsStatistics’ do
+    testing_pods
+end
+ 
+target ‘ColorsStatisticsTests’ do
+	testing_pods
+end
+

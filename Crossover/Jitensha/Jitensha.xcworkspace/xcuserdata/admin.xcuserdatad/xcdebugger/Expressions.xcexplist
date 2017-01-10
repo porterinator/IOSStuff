@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__37-[PlacesViewController bindViewModel]_block_invoke:PlacesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_viewModel.places">
+            </PersistentString>
+            <PersistentString
+               value = "[_viewModel.places count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__28-[LoginViewModel initialize]_block_invoke_3:LoginViewModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "passwordValid.boolValue">
+            </PersistentString>
+            <PersistentString
+               value = "loginValid.boolValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__52-[JitenshaApiClient callApiMethodWithGet:arguments:]_block_invoke:JitenshaApiClient.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "responseObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__63-[JitenshaServiceImpl signalFromAPIMethod:arguments:transform:]_block_invoke_2:JitenshaServiceImpl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tuple.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__46-[JitenshaServiceImpl jitenshaGetPlacesSignal]_block_invoke:JitenshaServiceImpl.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[placesArray[i] valueForKey:@&quot;lat&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

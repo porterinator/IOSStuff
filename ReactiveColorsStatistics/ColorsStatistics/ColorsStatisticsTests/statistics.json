@@ -1,0 +1,63 @@
+{
+    "niche_stats": [
+                    {
+                    "niche": {
+                    "id": 13,
+                    "name": "Юмористическая литература1",
+                    "resource_uri": "/api/v1/catalog/niches/13/",
+                    "slug": "yumor"
+                    },
+                    "wishlist_count": 20,
+                    "nowreading_count": 10,
+                    "read_count": 4
+                    },
+                    {
+                    "niche": {
+                    "id": 2895,
+                    "name": "Эротика и секс1",
+                    "resource_uri": "/api/v1/catalog/niches/2895/",
+                    "slug": "erotika-i-seks"
+                    },
+                    "wishlist_count": 8,
+                    "nowreading_count": 4,
+                    "read_count": 2
+                    },
+                    {
+                    "niche": {
+                    "id": 2894,
+                    "name": "Эзотерика",
+                    "resource_uri": "/api/v1/catalog/niches/2894/",
+                    "slug": "ezoterika"
+                    },
+                    "wishlist_count": 8,
+                    "nowreading_count": 3,
+                    "read_count": 1
+                    },
+                    {
+                    "niche": {
+                    "id": 22,
+                    "name": "Фэнтези",
+                    "resource_uri": "/api/v1/catalog/niches/22/",
+                    "slug": "fentezi"
+                    },
+                    "wishlist_count": 7,
+                    "nowreading_count": 2,
+                    "read_count": 1
+                    },
+                    {
+                    "niche": {
+                    "id": 2,
+                    "name": "Фантастика",
+                    "resource_uri": "/api/v1/catalog/niches/2/",
+                    "slug": "fantastika"
+                    },
+                    "wishlist_count": 5,
+                    "nowreading_count": 0,
+                    "read_count": 0
+                    }
+                    ],
+    "wishlist_count": 10,
+    "nowreading_count": 2,
+    "read_count": 4,
+    "seconds_count": 10
+}

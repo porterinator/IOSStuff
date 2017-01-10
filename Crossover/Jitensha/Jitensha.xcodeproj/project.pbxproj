@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5206ADA42B048CCE541FD5 /* Pods_JitenshaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0775D9E90AC5325A54309B /* Pods_JitenshaTests.framework */; };
+		5E06B82B4EA52B1809985A65 /* Pods_Jitensha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C76EB7F10E26626F5A80D6 /* Pods_Jitensha.framework */; };
+		84E9F4DA1DFC291B0038897E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4D91DFC291B0038897E /* main.m */; };
+		84E9F4DD1DFC291B0038897E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4DC1DFC291B0038897E /* AppDelegate.m */; };
+		84E9F4E01DFC291B0038897E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4DF1DFC291B0038897E /* LoginViewController.m */; };
+		84E9F4E31DFC291B0038897E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4E11DFC291B0038897E /* Main.storyboard */; };
+		84E9F4E51DFC291B0038897E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4E41DFC291B0038897E /* Assets.xcassets */; };
+		84E9F4E81DFC291B0038897E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4E61DFC291B0038897E /* LaunchScreen.storyboard */; };
+		84E9F4F31DFC291B0038897E /* JitenshaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4F21DFC291B0038897E /* JitenshaTests.m */; };
+		84E9F5031DFC2D3B0038897E /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5021DFC2D3B0038897E /* LoginViewModel.m */; };
+		84E9F50C1DFC3AE50038897E /* JitenshaServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F50B1DFC3AE50038897E /* JitenshaServiceImpl.m */; };
+		84E9F50F1DFC3CD20038897E /* ViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F50E1DFC3CD20038897E /* ViewModelServicesImpl.m */; };
+		84E9F5121DFC4AA90038897E /* JitenshaApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5111DFC4AA90038897E /* JitenshaApiClient.m */; };
+		84E9F5171DFC65080038897E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E9F5161DFC65080038897E /* Security.framework */; };
+		84E9F51C1DFC69610038897E /* PlacesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F51B1DFC69610038897E /* PlacesViewModel.m */; };
+		84E9F5201DFC6A240038897E /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F51F1DFC6A240038897E /* PlacesViewController.m */; };
+		84E9F5271DFC7F520038897E /* JitenshaPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5261DFC7F520038897E /* JitenshaPlace.m */; };
+		84E9F52D1DFC8DB00038897E /* RentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F52C1DFC8DB00038897E /* RentController.m */; };
+		84E9F5301DFC8DBE0038897E /* RentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F52F1DFC8DBE0038897E /* RentViewModel.m */; };
+		84E9F5331DFD22D50038897E /* Luhn.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5321DFD22D50038897E /* Luhn.m */; };
+		84E9F5371DFD2EBF0038897E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F5391DFD2EBF0038897E /* Localizable.strings */; };
+		84E9F53B1DFD33090038897E /* JitenshaApiClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F53A1DFD33090038897E /* JitenshaApiClientTests.m */; };
+		84E9F5401DFD363A0038897E /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F53F1DFD363A0038897E /* places.json */; };
+		84E9F5421DFD388A0038897E /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F5411DFD388A0038897E /* login.json */; };
+		84E9F5441DFD3B4E0038897E /* JitenshaApiIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5431DFD3B4E0038897E /* JitenshaApiIntegrationTests.m */; };
+		84E9F5471DFD55A00038897E /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F5461DFD55A00038897E /* KeyboardViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E9F4EF1DFC291B0038897E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E9F4CD1DFC291B0038897E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E9F4D41DFC291B0038897E;
+			remoteInfo = Jitensha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D0775D9E90AC5325A54309B /* Pods_JitenshaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JitenshaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B71AA124D715A721761DB02 /* Pods-Jitensha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha/Pods-Jitensha.debug.xcconfig"; sourceTree = "<group>"; };
+		760F0F0D4B90F9C1DEB30A02 /* Pods-JitenshaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitenshaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JitenshaTests/Pods-JitenshaTests.release.xcconfig"; sourceTree = "<group>"; };
+		84E9F4D51DFC291B0038897E /* Jitensha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jitensha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9F4D91DFC291B0038897E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84E9F4DB1DFC291B0038897E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84E9F4DC1DFC291B0038897E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84E9F4DE1DFC291B0038897E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		84E9F4DF1DFC291B0038897E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		84E9F4E21DFC291B0038897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E9F4E41DFC291B0038897E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84E9F4E71DFC291B0038897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E9F4E91DFC291B0038897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E9F4EE1DFC291B0038897E /* JitenshaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JitenshaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9F4F21DFC291B0038897E /* JitenshaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JitenshaTests.m; sourceTree = "<group>"; };
+		84E9F4F41DFC291B0038897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E9F5011DFC2D3B0038897E /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		84E9F5021DFC2D3B0038897E /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		84E9F5041DFC356D0038897E /* ViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelServices.h; sourceTree = "<group>"; };
+		84E9F5071DFC36170038897E /* JitenshaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JitenshaService.h; sourceTree = "<group>"; };
+		84E9F50A1DFC3AE50038897E /* JitenshaServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JitenshaServiceImpl.h; sourceTree = "<group>"; };
+		84E9F50B1DFC3AE50038897E /* JitenshaServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JitenshaServiceImpl.m; sourceTree = "<group>"; };
+		84E9F50D1DFC3CD20038897E /* ViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelServicesImpl.h; sourceTree = "<group>"; };
+		84E9F50E1DFC3CD20038897E /* ViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelServicesImpl.m; sourceTree = "<group>"; };
+		84E9F5101DFC4AA90038897E /* JitenshaApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JitenshaApiClient.h; sourceTree = "<group>"; };
+		84E9F5111DFC4AA90038897E /* JitenshaApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JitenshaApiClient.m; sourceTree = "<group>"; };
+		84E9F5131DFC4C580038897E /* JitenshaApiClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JitenshaApiClientDelegate.h; sourceTree = "<group>"; };
+		84E9F5161DFC65080038897E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84E9F51A1DFC69610038897E /* PlacesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewModel.h; sourceTree = "<group>"; };
+		84E9F51B1DFC69610038897E /* PlacesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewModel.m; sourceTree = "<group>"; };
+		84E9F51E1DFC6A240038897E /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		84E9F51F1DFC6A240038897E /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
+		84E9F5251DFC7F520038897E /* JitenshaPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JitenshaPlace.h; sourceTree = "<group>"; };
+		84E9F5261DFC7F520038897E /* JitenshaPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JitenshaPlace.m; sourceTree = "<group>"; };
+		84E9F52B1DFC8DB00038897E /* RentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RentController.h; sourceTree = "<group>"; };
+		84E9F52C1DFC8DB00038897E /* RentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RentController.m; sourceTree = "<group>"; };
+		84E9F52E1DFC8DBE0038897E /* RentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RentViewModel.h; sourceTree = "<group>"; };
+		84E9F52F1DFC8DBE0038897E /* RentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RentViewModel.m; sourceTree = "<group>"; };
+		84E9F5311DFD22D50038897E /* Luhn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Luhn.h; sourceTree = "<group>"; };
+		84E9F5321DFD22D50038897E /* Luhn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Luhn.m; sourceTree = "<group>"; };
+		84E9F5381DFD2EBF0038897E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84E9F53A1DFD33090038897E /* JitenshaApiClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JitenshaApiClientTests.m; sourceTree = "<group>"; };
+		84E9F53F1DFD363A0038897E /* places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
+		84E9F5411DFD388A0038897E /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		84E9F5431DFD3B4E0038897E /* JitenshaApiIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JitenshaApiIntegrationTests.m; sourceTree = "<group>"; };
+		84E9F5451DFD55A00038897E /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		84E9F5461DFD55A00038897E /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		88C76EB7F10E26626F5A80D6 /* Pods_Jitensha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jitensha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EB89B07ABD0C96422CB8A4 /* Pods-JitenshaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitenshaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JitenshaTests/Pods-JitenshaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F991D2DCEF57AB53660CC5D8 /* Pods-Jitensha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jitensha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jitensha/Pods-Jitensha.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E9F4D21DFC291B0038897E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F5171DFC65080038897E /* Security.framework in Frameworks */,
+				5E06B82B4EA52B1809985A65 /* Pods_Jitensha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E9F4EB1DFC291B0038897E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5206ADA42B048CCE541FD5 /* Pods_JitenshaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B3BC7EEA108ACFA352A3C8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B71AA124D715A721761DB02 /* Pods-Jitensha.debug.xcconfig */,
+				F991D2DCEF57AB53660CC5D8 /* Pods-Jitensha.release.xcconfig */,
+				C4EB89B07ABD0C96422CB8A4 /* Pods-JitenshaTests.debug.xcconfig */,
+				760F0F0D4B90F9C1DEB30A02 /* Pods-JitenshaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84E9F4CC1DFC291B0038897E = {
+			isa = PBXGroup;
+			children = (
+				84E9F4D71DFC291B0038897E /* Jitensha */,
+				84E9F4F11DFC291B0038897E /* JitenshaTests */,
+				84E9F4D61DFC291B0038897E /* Products */,
+				D9393C419C0A3FD1987BE90A /* Frameworks */,
+				3B3BC7EEA108ACFA352A3C8A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84E9F4D61DFC291B0038897E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4D51DFC291B0038897E /* Jitensha.app */,
+				84E9F4EE1DFC291B0038897E /* JitenshaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E9F4D71DFC291B0038897E /* Jitensha */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F5311DFD22D50038897E /* Luhn.h */,
+				84E9F5321DFD22D50038897E /* Luhn.m */,
+				84E9F4FD1DFC2CDC0038897E /* Login */,
+				84E9F5181DFC691E0038897E /* Places */,
+				84E9F5281DFC8D6D0038897E /* Rent */,
+				84E9F4DB1DFC291B0038897E /* AppDelegate.h */,
+				84E9F4DC1DFC291B0038897E /* AppDelegate.m */,
+				84E9F4E11DFC291B0038897E /* Main.storyboard */,
+				84E9F4E41DFC291B0038897E /* Assets.xcassets */,
+				84E9F4E61DFC291B0038897E /* LaunchScreen.storyboard */,
+				84E9F4E91DFC291B0038897E /* Info.plist */,
+				84E9F4D81DFC291B0038897E /* Supporting Files */,
+				84E9F5391DFD2EBF0038897E /* Localizable.strings */,
+				84E9F5451DFD55A00038897E /* KeyboardViewController.h */,
+				84E9F5461DFD55A00038897E /* KeyboardViewController.m */,
+			);
+			path = Jitensha;
+			sourceTree = "<group>";
+		};
+		84E9F4D81DFC291B0038897E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4D91DFC291B0038897E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E9F4F11DFC291B0038897E /* JitenshaTests */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F53E1DFD361F0038897E /* Stubs */,
+				84E9F4F21DFC291B0038897E /* JitenshaTests.m */,
+				84E9F53A1DFD33090038897E /* JitenshaApiClientTests.m */,
+				84E9F5431DFD3B4E0038897E /* JitenshaApiIntegrationTests.m */,
+				84E9F4F41DFC291B0038897E /* Info.plist */,
+			);
+			path = JitenshaTests;
+			sourceTree = "<group>";
+		};
+		84E9F4FD1DFC2CDC0038897E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4FE1DFC2CEA0038897E /* View */,
+				84E9F4FF1DFC2CF90038897E /* ViewModel */,
+				84E9F5001DFC2D0E0038897E /* Model */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		84E9F4FE1DFC2CEA0038897E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4DE1DFC291B0038897E /* LoginViewController.h */,
+				84E9F4DF1DFC291B0038897E /* LoginViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84E9F4FF1DFC2CF90038897E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F5011DFC2D3B0038897E /* LoginViewModel.h */,
+				84E9F5021DFC2D3B0038897E /* LoginViewModel.m */,
+				84E9F5041DFC356D0038897E /* ViewModelServices.h */,
+				84E9F50D1DFC3CD20038897E /* ViewModelServicesImpl.h */,
+				84E9F50E1DFC3CD20038897E /* ViewModelServicesImpl.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		84E9F5001DFC2D0E0038897E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F5071DFC36170038897E /* JitenshaService.h */,
+				84E9F50A1DFC3AE50038897E /* JitenshaServiceImpl.h */,
+				84E9F50B1DFC3AE50038897E /* JitenshaServiceImpl.m */,
+				84E9F5101DFC4AA90038897E /* JitenshaApiClient.h */,
+				84E9F5111DFC4AA90038897E /* JitenshaApiClient.m */,
+				84E9F5131DFC4C580038897E /* JitenshaApiClientDelegate.h */,
+				84E9F5251DFC7F520038897E /* JitenshaPlace.h */,
+				84E9F5261DFC7F520038897E /* JitenshaPlace.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84E9F5181DFC691E0038897E /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F51D1DFC6A0D0038897E /* View */,
+				84E9F5191DFC692C0038897E /* ViewModel */,
+			);
+			name = Places;
+			sourceTree = "<group>";
+		};
+		84E9F5191DFC692C0038897E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F51A1DFC69610038897E /* PlacesViewModel.h */,
+				84E9F51B1DFC69610038897E /* PlacesViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		84E9F51D1DFC6A0D0038897E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F51E1DFC6A240038897E /* PlacesViewController.h */,
+				84E9F51F1DFC6A240038897E /* PlacesViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84E9F5281DFC8D6D0038897E /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F5291DFC8D780038897E /* View */,
+				84E9F52A1DFC8D7F0038897E /* ViewModel */,
+			);
+			name = Rent;
+			sourceTree = "<group>";
+		};
+		84E9F5291DFC8D780038897E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F52B1DFC8DB00038897E /* RentController.h */,
+				84E9F52C1DFC8DB00038897E /* RentController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84E9F52A1DFC8D7F0038897E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F52E1DFC8DBE0038897E /* RentViewModel.h */,
+				84E9F52F1DFC8DBE0038897E /* RentViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		84E9F53E1DFD361F0038897E /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F53F1DFD363A0038897E /* places.json */,
+				84E9F5411DFD388A0038897E /* login.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		D9393C419C0A3FD1987BE90A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F5161DFC65080038897E /* Security.framework */,
+				88C76EB7F10E26626F5A80D6 /* Pods_Jitensha.framework */,
+				2D0775D9E90AC5325A54309B /* Pods_JitenshaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E9F4D41DFC291B0038897E /* Jitensha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E9F4F71DFC291B0038897E /* Build configuration list for PBXNativeTarget "Jitensha" */;
+			buildPhases = (
+				211977AC614446161224F4B2 /* [CP] Check Pods Manifest.lock */,
+				84E9F4D11DFC291B0038897E /* Sources */,
+				84E9F4D21DFC291B0038897E /* Frameworks */,
+				84E9F4D31DFC291B0038897E /* Resources */,
+				B0C8D484AAE0FFF18CBB7241 /* [CP] Embed Pods Frameworks */,
+				25E3C02E65BA1E3B6D27ED8B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jitensha;
+			productName = Jitensha;
+			productReference = 84E9F4D51DFC291B0038897E /* Jitensha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84E9F4ED1DFC291B0038897E /* JitenshaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E9F4FA1DFC291B0038897E /* Build configuration list for PBXNativeTarget "JitenshaTests" */;
+			buildPhases = (
+				18AB328DC9FB13F55E780B8B /* [CP] Check Pods Manifest.lock */,
+				84E9F4EA1DFC291B0038897E /* Sources */,
+				84E9F4EB1DFC291B0038897E /* Frameworks */,
+				84E9F4EC1DFC291B0038897E /* Resources */,
+				E87C90F5E284E7A571D1D04F /* [CP] Embed Pods Frameworks */,
+				85B8DC7419C698ACFA23D385 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E9F4F01DFC291B0038897E /* PBXTargetDependency */,
+			);
+			name = JitenshaTests;
+			productName = JitenshaTests;
+			productReference = 84E9F4EE1DFC291B0038897E /* JitenshaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E9F4CD1DFC291B0038897E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84E9F4D41DFC291B0038897E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78CXM57KJ4;
+					};
+					84E9F4ED1DFC291B0038897E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78CXM57KJ4;
+						TestTargetID = 84E9F4D41DFC291B0038897E;
+					};
+				};
+			};
+			buildConfigurationList = 84E9F4D01DFC291B0038897E /* Build configuration list for PBXProject "Jitensha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84E9F4CC1DFC291B0038897E;
+			productRefGroup = 84E9F4D61DFC291B0038897E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E9F4D41DFC291B0038897E /* Jitensha */,
+				84E9F4ED1DFC291B0038897E /* JitenshaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E9F4D31DFC291B0038897E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F4E81DFC291B0038897E /* LaunchScreen.storyboard in Resources */,
+				84E9F5371DFD2EBF0038897E /* Localizable.strings in Resources */,
+				84E9F4E51DFC291B0038897E /* Assets.xcassets in Resources */,
+				84E9F4E31DFC291B0038897E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E9F4EC1DFC291B0038897E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F5401DFD363A0038897E /* places.json in Resources */,
+				84E9F5421DFD388A0038897E /* login.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18AB328DC9FB13F55E780B8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		211977AC614446161224F4B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		25E3C02E65BA1E3B6D27ED8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jitensha/Pods-Jitensha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B8DC7419C698ACFA23D385 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JitenshaTests/Pods-JitenshaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C8D484AAE0FFF18CBB7241 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jitensha/Pods-Jitensha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87C90F5E284E7A571D1D04F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JitenshaTests/Pods-JitenshaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E9F4D11DFC291B0038897E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F5331DFD22D50038897E /* Luhn.m in Sources */,
+				84E9F51C1DFC69610038897E /* PlacesViewModel.m in Sources */,
+				84E9F5031DFC2D3B0038897E /* LoginViewModel.m in Sources */,
+				84E9F4E01DFC291B0038897E /* LoginViewController.m in Sources */,
+				84E9F5301DFC8DBE0038897E /* RentViewModel.m in Sources */,
+				84E9F52D1DFC8DB00038897E /* RentController.m in Sources */,
+				84E9F5201DFC6A240038897E /* PlacesViewController.m in Sources */,
+				84E9F4DD1DFC291B0038897E /* AppDelegate.m in Sources */,
+				84E9F5271DFC7F520038897E /* JitenshaPlace.m in Sources */,
+				84E9F5471DFD55A00038897E /* KeyboardViewController.m in Sources */,
+				84E9F4DA1DFC291B0038897E /* main.m in Sources */,
+				84E9F5121DFC4AA90038897E /* JitenshaApiClient.m in Sources */,
+				84E9F50F1DFC3CD20038897E /* ViewModelServicesImpl.m in Sources */,
+				84E9F50C1DFC3AE50038897E /* JitenshaServiceImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E9F4EA1DFC291B0038897E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F5441DFD3B4E0038897E /* JitenshaApiIntegrationTests.m in Sources */,
+				84E9F4F31DFC291B0038897E /* JitenshaTests.m in Sources */,
+				84E9F53B1DFD33090038897E /* JitenshaApiClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E9F4F01DFC291B0038897E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E9F4D41DFC291B0038897E /* Jitensha */;
+			targetProxy = 84E9F4EF1DFC291B0038897E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84E9F4E11DFC291B0038897E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E9F4E21DFC291B0038897E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E9F4E61DFC291B0038897E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E9F4E71DFC291B0038897E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84E9F5391DFD2EBF0038897E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E9F5381DFD2EBF0038897E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E9F4F51DFC291B0038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E9F4F61DFC291B0038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E9F4F81DFC291B0038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B71AA124D715A721761DB02 /* Pods-Jitensha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jitensha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossover.Jitensha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84E9F4F91DFC291B0038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F991D2DCEF57AB53660CC5D8 /* Pods-Jitensha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jitensha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossover.Jitensha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84E9F4FB1DFC291B0038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EB89B07ABD0C96422CB8A4 /* Pods-JitenshaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JitenshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossover.JitenshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jitensha.app/Jitensha";
+			};
+			name = Debug;
+		};
+		84E9F4FC1DFC291B0038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760F0F0D4B90F9C1DEB30A02 /* Pods-JitenshaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JitenshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossover.JitenshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jitensha.app/Jitensha";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E9F4D01DFC291B0038897E /* Build configuration list for PBXProject "Jitensha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F4F51DFC291B0038897E /* Debug */,
+				84E9F4F61DFC291B0038897E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E9F4F71DFC291B0038897E /* Build configuration list for PBXNativeTarget "Jitensha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F4F81DFC291B0038897E /* Debug */,
+				84E9F4F91DFC291B0038897E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E9F4FA1DFC291B0038897E /* Build configuration list for PBXNativeTarget "JitenshaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F4FB1DFC291B0038897E /* Debug */,
+				84E9F4FC1DFC291B0038897E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E9F4CD1DFC291B0038897E /* Project object */;
+}

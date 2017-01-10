@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PolygonImage : UIView
+@interface PolygonImage : UIImageView
+
+@property BOOL isTop;
 
 @end

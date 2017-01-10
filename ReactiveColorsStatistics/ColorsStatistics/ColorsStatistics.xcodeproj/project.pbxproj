@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121F1B455C4054D6934A7590 /* Pods_ColorsStatisticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3215EF597A5A869C316D1262 /* Pods_ColorsStatisticsTests.framework */; };
+		4CDDFF34D43BFF46F23DAD13 /* Pods_ColorsStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9600B12E7866598913459B99 /* Pods_ColorsStatistics.framework */; };
 		840B05BD1DB5F1C500E7F2BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B05BC1DB5F1C500E7F2BF /* main.m */; };
 		840B05C01DB5F1C500E7F2BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B05BF1DB5F1C500E7F2BF /* AppDelegate.m */; };
 		840B05C61DB5F1C500E7F2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B05C41DB5F1C500E7F2BF /* Main.storyboard */; };
@@ -29,12 +31,24 @@
 		840B073C1DB7D1BE00E7F2BF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 840B073B1DB7D1BE00E7F2BF /* libsqlite3.tbd */; };
 		840B073F1DB7D94500E7F2BF /* NicheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840B073E1DB7D94500E7F2BF /* NicheModel.m */; };
 		84D17DAD1DD6F978008CD05C /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D17DAC1DD6F978008CD05C /* ViewModel.m */; };
-		B9E062B879EE4BB782098B33 /* libPods-ColorsStatistics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F520DD3C3545613F0C1EFA0 /* libPods-ColorsStatistics.a */; };
+		84E9F4C21DFBEB100038897E /* ColorsStatisticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9F4C11DFBEB100038897E /* ColorsStatisticsTests.m */; };
+		84E9F4CB1DFBEE0C0038897E /* statistics.json in Resources */ = {isa = PBXBuildFile; fileRef = 84E9F4CA1DFBEE0C0038897E /* statistics.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E9F4C41DFBEB100038897E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840B05B01DB5F1C500E7F2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840B05B71DB5F1C500E7F2BF;
+			remoteInfo = ColorsStatistics;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2853DD2B81C1A898A274D2CE /* Pods-ColorsStatistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorsStatistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorsStatistics/Pods-ColorsStatistics.debug.xcconfig"; sourceTree = "<group>"; };
-		7F520DD3C3545613F0C1EFA0 /* libPods-ColorsStatistics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorsStatistics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3215EF597A5A869C316D1262 /* Pods_ColorsStatisticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorsStatisticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AA625F00C1A3B523207EF6 /* Pods-ColorsStatisticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorsStatisticsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorsStatisticsTests/Pods-ColorsStatisticsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		840B05B81DB5F1C500E7F2BF /* ColorsStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorsStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B05BC1DB5F1C500E7F2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		840B05BE1DB5F1C500E7F2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +89,12 @@
 		840B073E1DB7D94500E7F2BF /* NicheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NicheModel.m; path = ColorsStatistics/NicheModel.m; sourceTree = "<group>"; };
 		84D17DAB1DD6F978008CD05C /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		84D17DAC1DD6F978008CD05C /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		84E9F4BF1DFBEB100038897E /* ColorsStatisticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsStatisticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E9F4C11DFBEB100038897E /* ColorsStatisticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsStatisticsTests.m; sourceTree = "<group>"; };
+		84E9F4C31DFBEB100038897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E9F4CA1DFBEE0C0038897E /* statistics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = statistics.json; sourceTree = "<group>"; };
+		9600B12E7866598913459B99 /* Pods_ColorsStatistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorsStatistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F016C6FABA11A3CA03683D /* Pods-ColorsStatisticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorsStatisticsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorsStatisticsTests/Pods-ColorsStatisticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA8F9D89A37F9BDA8BE31E3C /* Pods-ColorsStatistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorsStatistics.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorsStatistics/Pods-ColorsStatistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +104,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				840B073C1DB7D1BE00E7F2BF /* libsqlite3.tbd in Frameworks */,
-				B9E062B879EE4BB782098B33 /* libPods-ColorsStatistics.a in Frameworks */,
+				4CDDFF34D43BFF46F23DAD13 /* Pods_ColorsStatistics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E9F4BC1DFBEB100038897E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121F1B455C4054D6934A7590 /* Pods_ColorsStatisticsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +124,8 @@
 			children = (
 				2853DD2B81C1A898A274D2CE /* Pods-ColorsStatistics.debug.xcconfig */,
 				CA8F9D89A37F9BDA8BE31E3C /* Pods-ColorsStatistics.release.xcconfig */,
+				66AA625F00C1A3B523207EF6 /* Pods-ColorsStatisticsTests.debug.xcconfig */,
+				B0F016C6FABA11A3CA03683D /* Pods-ColorsStatisticsTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,7 +133,8 @@
 		7F11342C42A1527DF92E3657 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F520DD3C3545613F0C1EFA0 /* libPods-ColorsStatistics.a */,
+				9600B12E7866598913459B99 /* Pods_ColorsStatistics.framework */,
+				3215EF597A5A869C316D1262 /* Pods_ColorsStatisticsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +150,7 @@
 				840B05FF1DB7B92400E7F2BF /* DB */,
 				840B05EC1DB64A9F00E7F2BF /* SQLite */,
 				840B06091DB7BE8500E7F2BF /* Recources */,
+				84E9F4C01DFBEB100038897E /* ColorsStatisticsTests */,
 				840B05B91DB5F1C500E7F2BF /* Products */,
 				405C2483C6CA4BE2077AB4BB /* Pods */,
 				7F11342C42A1527DF92E3657 /* Frameworks */,
@@ -129,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				840B05B81DB5F1C500E7F2BF /* ColorsStatistics.app */,
+				84E9F4BF1DFBEB100038897E /* ColorsStatisticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +261,24 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		84E9F4C01DFBEB100038897E /* ColorsStatisticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4C91DFBEDEF0038897E /* Stubs */,
+				84E9F4C11DFBEB100038897E /* ColorsStatisticsTests.m */,
+				84E9F4C31DFBEB100038897E /* Info.plist */,
+			);
+			path = ColorsStatisticsTests;
+			sourceTree = "<group>";
+		};
+		84E9F4C91DFBEDEF0038897E /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				84E9F4CA1DFBEE0C0038897E /* statistics.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +302,27 @@
 			productReference = 840B05B81DB5F1C500E7F2BF /* ColorsStatistics.app */;
 			productType = "com.apple.product-type.application";
 		};
+		84E9F4BE1DFBEB100038897E /* ColorsStatisticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E9F4C81DFBEB100038897E /* Build configuration list for PBXNativeTarget "ColorsStatisticsTests" */;
+			buildPhases = (
+				35033C19E62B601342B8AA6F /* [CP] Check Pods Manifest.lock */,
+				84E9F4BB1DFBEB100038897E /* Sources */,
+				84E9F4BC1DFBEB100038897E /* Frameworks */,
+				84E9F4BD1DFBEB100038897E /* Resources */,
+				FD537A31BF96E04C0162722A /* [CP] Embed Pods Frameworks */,
+				CAECD7544066BABB8102F1F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E9F4C51DFBEB100038897E /* PBXTargetDependency */,
+			);
+			name = ColorsStatisticsTests;
+			productName = ColorsStatisticsTests;
+			productReference = 84E9F4BF1DFBEB100038897E /* ColorsStatisticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +334,11 @@
 				TargetAttributes = {
 					840B05B71DB5F1C500E7F2BF = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					84E9F4BE1DFBEB100038897E = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 78CXM57KJ4;
+						TestTargetID = 840B05B71DB5F1C500E7F2BF;
 					};
 				};
 			};
@@ -279,6 +356,7 @@
 			projectRoot = "";
 			targets = (
 				840B05B71DB5F1C500E7F2BF /* ColorsStatistics */,
+				84E9F4BE1DFBEB100038897E /* ColorsStatisticsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,9 +374,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84E9F4BD1DFBEB100038897E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F4CB1DFBEE0C0038897E /* statistics.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35033C19E62B601342B8AA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		535F3B9218562365DCC8972A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +445,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorsStatistics/Pods-ColorsStatistics-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CAECD7544066BABB8102F1F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorsStatisticsTests/Pods-ColorsStatisticsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD537A31BF96E04C0162722A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorsStatisticsTests/Pods-ColorsStatisticsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,7 +501,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84E9F4BB1DFBEB100038897E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9F4C21DFBEB100038897E /* ColorsStatisticsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E9F4C51DFBEB100038897E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840B05B71DB5F1C500E7F2BF /* ColorsStatistics */;
+			targetProxy = 84E9F4C41DFBEB100038897E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		840B05C41DB5F1C500E7F2BF /* Main.storyboard */ = {
@@ -517,6 +664,32 @@
 			};
 			name = Release;
 		};
+		84E9F4C61DFBEB100038897E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AA625F00C1A3B523207EF6 /* Pods-ColorsStatisticsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorsStatisticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org1.ColorsStatisticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorsStatistics.app/ColorsStatistics";
+			};
+			name = Debug;
+		};
+		84E9F4C71DFBEB100038897E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F016C6FABA11A3CA03683D /* Pods-ColorsStatisticsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorsStatisticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org1.ColorsStatisticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorsStatistics.app/ColorsStatistics";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +707,15 @@
 			buildConfigurations = (
 				840B05D01DB5F1C500E7F2BF /* Debug */,
 				840B05D11DB5F1C500E7F2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E9F4C81DFBEB100038897E /* Build configuration list for PBXNativeTarget "ColorsStatisticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E9F4C61DFBEB100038897E /* Debug */,
+				84E9F4C71DFBEB100038897E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
