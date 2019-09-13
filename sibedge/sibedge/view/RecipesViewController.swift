@@ -12,8 +12,8 @@ import RxSwift
 
 class RecipesViewController: UIViewController {
     
-    var recipesViewModel : RecipesViewModel?;
-    let disposeBag = DisposeBag();
+    var recipesViewModel : RecipesViewModel?
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var sortingContol: UISegmentedControl!
     
@@ -22,12 +22,12 @@ class RecipesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.rowHeight = 116;
-        setupCellConfiguration();
-        setupSearchFieldConfiguration();
-        setupSortingControl();
-        recipesViewModel!.getRecipes();
-        self.title = "Recipes";
+        self.tableView.rowHeight = 116
+        setupCellConfiguration()
+        setupSearchFieldConfiguration()
+        setupSortingControl()
+        recipesViewModel?.getRecipes()
+        self.title = "Recipes"
     }
     
     private func setupCellConfiguration() {
@@ -37,7 +37,7 @@ class RecipesViewController: UIViewController {
                 .rx
                 .items(cellIdentifier: RecipeCellTableViewCell.Identifier, cellType: RecipeCellTableViewCell.self)) {
                     row, recipe, cell in
-                    cell.configureWithRecipe(recipe: recipe);
+                    cell.configureWithRecipe(recipe: recipe)
             }
             .disposed(by: disposeBag)
         
@@ -48,11 +48,11 @@ class RecipesViewController: UIViewController {
             .orEmpty
             .debounce(0.3, scheduler: MainScheduler.instance)
             .bind(to: recipesViewModel!.filterString)
-            .disposed(by: disposeBag);
+            .disposed(by: disposeBag)
     }
     
     private func setupSortingControl() {
-        sortingContol.rx.selectedSegmentIndex.bind(to: recipesViewModel!.sortType).disposed(by: disposeBag);
+        sortingContol.rx.selectedSegmentIndex.bind(to: recipesViewModel!.sortType).disposed(by: disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,9 +63,15 @@ class RecipesViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "recipeDetailS") {
-            let ds : RecipeDetailViewController = segue.destination as! RecipeDetailViewController;
-            let cell = sender as! RecipeCellTableViewCell;
-            ds.recipeViewModel = RecipeViewModel(recipe: recipesViewModel!.recipes.value[tableView.indexPath(for: cell)!.row]);
+            let ds : RecipeDetailViewController = segue.destination as! RecipeDetailViewController
+            guard
+                let cell = sender as? RecipeCellTableViewCell,
+                let row = tableView.indexPath(for: cell)?.row,
+                let recipe = recipesViewModel?.recipes.value[row]
+            else {
+                    return
+            }
+            ds.recipeViewModel = RecipeViewModel(recipe: recipe)
         }
     }
     

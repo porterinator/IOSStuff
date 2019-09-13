@@ -18,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "RecipesVC")
-        let vc = initialViewController as? RecipesViewController;
-        let recipesService = SibedgeService();
-        let recipesViewModel = RecipesViewModel(sibedgeService: recipesService);
-        vc?.recipesViewModel = recipesViewModel;
+        let vc = initialViewController as? RecipesViewController
+        let recipesService = SibedgeService()
+        let recipesViewModel = RecipesViewModel(sibedgeService: recipesService)
+        vc?.recipesViewModel = recipesViewModel
         
-        let navigationController = UINavigationController(rootViewController: vc!);
+        let navigationController = UINavigationController(rootViewController: vc!)
         
-        self.window?.rootViewController = navigationController;
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         return true
     }
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        // Called as part of the transition from the background to the active state here you can undo many of the changes made on entering the background.
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

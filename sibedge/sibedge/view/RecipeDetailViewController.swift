@@ -11,7 +11,7 @@ import ImageSlideshow
 
 class RecipeDetailViewController: UIViewController {
     
-    var recipeViewModel : RecipeViewModel?;
+    var recipeViewModel : RecipeViewModel?
     
     @IBOutlet weak var imageSlideShow: ImageSlideshow!
     @IBOutlet weak var lbName: UILabel!
@@ -21,16 +21,16 @@ class RecipeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbName.text = recipeViewModel!.recipe.name;
-        lbDesc.text = recipeViewModel!.recipe.desc;
-        lbInstructions.text = recipeViewModel!.recipe.instructions;
-        var inputSources = [InputSource]();
-        for image in recipeViewModel!.recipe.images {
-            inputSources.append(KingfisherSource(urlString: image)!);
+        lbName.text = recipeViewModel?.recipe.name
+        lbDesc.text = recipeViewModel?.recipe.desc
+        lbInstructions.text = recipeViewModel?.recipe.instructions
+        var inputSources = [InputSource]()
+        for image in recipeViewModel?.recipe.images ?? [] {
+            inputSources.append(KingfisherSource(urlString: image)!)
         }
-        imageSlideShow.contentScaleMode = .scaleAspectFill;
-        imageSlideShow.setImageInputs(inputSources);
-        self.title = self.recipeViewModel!.recipe.name;
+        imageSlideShow.contentScaleMode = .scaleAspectFill
+        imageSlideShow.setImageInputs(inputSources)
+        self.title = self.recipeViewModel?.recipe.name
     }
     
     override func didReceiveMemoryWarning() {

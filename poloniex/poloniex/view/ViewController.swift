@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tickerViewModel!.startTicker()
+        tickerViewModel?.startTicker()
         self.tickerTable.rowHeight = 44
         setupCellConfiguration()
     }
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     private func setupCellConfiguration() {
         //Equivalent of cell for row at index path
         tickerViewModel!.cryptopairs.asObservable()
-            .bindTo(tickerTable
+            .bind(to: tickerTable
                 .rx
                 .items(cellIdentifier: TickerCell.Identifier, cellType: TickerCell.self)) {
                     row, cryptoPair, cell in

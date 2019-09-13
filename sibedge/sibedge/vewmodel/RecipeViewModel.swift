@@ -10,10 +10,10 @@ import UIKit
 
 class RecipeViewModel: NSObject {
     
-    public var recipe : Recipe;
+    var recipe : Recipe
     
     init(recipe : Recipe) {
-        self.recipe = recipe;
+        self.recipe = recipe
     }
 
 }
