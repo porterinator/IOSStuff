@@ -12,9 +12,9 @@ import RxCocoa
 
 class ViewController: UIViewController {
     
-    var tickerViewModel : TickerViewModel?;
+    var tickerViewModel: TickerViewModel?
     
-    let disposeBag = DisposeBag();
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var tickerTable: UITableView!
     
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tickerViewModel!.startTicker();
-        self.tickerTable.rowHeight = 44;
-        setupCellConfiguration();
+        tickerViewModel!.startTicker()
+        self.tickerTable.rowHeight = 44
+        setupCellConfiguration()
     }
     
     private func setupCellConfiguration() {

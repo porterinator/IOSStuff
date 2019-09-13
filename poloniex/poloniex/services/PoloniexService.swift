@@ -11,20 +11,20 @@ import UIKit
 import RxAlamofire
 import RxSwift
 
-class PoloniexService: NSObject {
+class PoloniexService {
     
-    let tickerURL : String = "https://poloniex.com/public?command=returnTicker";
+    let tickerURL: String = "https://poloniex.com/public?command=returnTicker";
 
     
-    public func getTicker() -> Observable<[CryptoPair]> {
+    func getTicker() -> Observable<[CryptoPair]> {
         return RxAlamofire.requestJSON(.get, tickerURL).map({ (response, json) -> [CryptoPair] in
-            guard let resp = json as? [String : Any] else {
-                return [];
-            };
+            guard let resp = json as? [String: Any] else {
+                return []
+            }
             /*
              "id":7,"last":"0.00000050","lowestAsk":"0.00000050","highestBid":"0.00000049","percentChange":"-0.05660377","baseVolume":"49.92945219","quoteVolume":"96849508.55253161","isFrozen":"0","high24hr":"0.00000054","low24hr":"0.00000049"}
              */
-            var cryptopairs = [CryptoPair]();
+            var cryptopairs = [CryptoPair]()
             for (key, value) in resp {
                 let attributes = value as? [String : Any];
                 let cryptoPair = CryptoPair(
@@ -39,10 +39,10 @@ class PoloniexService: NSObject {
                     isFrozen: NSString(string: attributes!["isFrozen"] as! String).boolValue,
                     high24hr: Float(attributes!["high24hr"]  as! String)!,
                     low24hr: Float(attributes!["low24hr"]  as! String)!
-                );
-                cryptopairs.append(cryptoPair);
+                )
+                cryptopairs.append(cryptoPair)
             }
-            return cryptopairs;
+            return cryptopairs
         })
     }
 }
